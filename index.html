@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smoothie</title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <!--banner-->
+  <section id="banner">
+    <div class="bg-color">
+      <header id="header">
+        <div class="container">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">O nama</a>
+            <a href="#menu-list">Smoothie Bar</a>
+            <a href="#contact">Kontakt</a>
+          </div>
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name">Smoothie Bar</h1>
+            <h2>Omiljeni obrok za svaki dan.</h2>
+            <p>Od najbolje probranog voća i povrća</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / banner -->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">Ko smo mi?</h1>
+          <p class="header-p">Smoothie Bar je mjesto gdje se služe svježa pića i zdrava hrana. <br>Naša ponuda je pogodna za vegane, vegetarijance i sve koji žele da budu zdravi.</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-info">
+              <h2 class="heading">Smoothie Bar</h2>
+              <p>Kutak gdje se poslužuju svježa pića i zdrava hrana. Naša ponuda je pogodna za odrasle i djecu, vegane, vegetarijance i sve one koji žele biti zdravi i uživati u odličnim okusima.<br>
+
+                <br>Naša ponuda je stvorena od strane obrazovanog osoblja, a sva pića su kreirana za sva čula. Sastojci koje koristimo u pripremi su uvijek svježi i testirani.</p>
+              <div class="details-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Uvijek svježe voće i povrće</li>
+                  <li><i class="fa fa-check"></i>Egzotične kombinacije okusa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="img/res01.jpg" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  <!--/about-->
+
+  <!-- event 
+  <section id="event">
+    <div class="bg-color" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center" style="padding:60px;">
+            <h1 class="header-h">Up Coming events</h1>
+            <p class="header-p">Decorations 100% complete here</p>
+          </div>
+          <div class="col-md-12" style="padding-bottom:60px;">
+            <div class="item active left">
+              <div class="col-md-6 col-sm-6 left-images">
+                <img src="img/res02.jpg" class="img-responsive">
+              </div>
+              <div class="col-md-6 col-sm-6 details-text">
+                <div class="content-holder">
+                  <h2>Joyful party</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
+                  <address>
+                              <strong>Place: </strong>
+                              1612 Collins Str, Victoria 8007
+                              <br>
+                              <strong>Time: </strong>
+                              07:30pm
+                            </address>
+                  <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ event -->
+
+  <!-- menu OVDJE UBACITI SEKCIJU SA FORMIRANJE SMOOTHIES-A, TREBA SKONTATI DIZAJN-->
+  <section id="menu-list" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">Smoothie Bar</h1>
+          <p class="header-p">Odabirom svježih sastojaka kreirajte svoj omiljeni Smoothie i probudite svoja čula!</p>
+        </div>
+        <div class="col-md-12  text-center" id="menu-flters">
+          <ul>
+            <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
+            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
+            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
+            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
+          </ul>
+        </div>
+
+        <div id="menu-wrapper">
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="dinner menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="dinner menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+
+          <div class="dinner menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- OVDJE UBACITI MENI SA SASTOJCIMA DA SE MOŽE KREIRATI KONAČNA CIJENA SMOOTHIE-A -->
+  <!-- contact -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="header-h">Naruci svoj omiljeni Smoothie!</h1>
+          <p class="header-p">U sekciji iznad odaberite omiljene sastojke i rezervišite svoj omiljeni napitak odmah!</p>
+        </div>
+      </div>
+      <div class="row msg-row">
+        <div class="col-md-4 col-sm-4 mr-15">
+          <div class="media-2">
+            <div class="media-left">
+              <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Kontakt telefon</h4>
+              <p class="light-blue regular alt-p">+387 61 123 123 - <span class="contacts-sp">Rezervacija putem telefona</span></p>
+            </div>
+          </div>
+          <div class="media-2">
+            <div class="media-left">
+              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Radno vrijeme</h4>
+              <p class="light-blue regular alt-p"> Ponedjeljak - Petak 09.00 - 23:00</p>
+              <p class="light-blue regular alt-p">
+                Subota i Nedjelja 08:00 - 14.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <form action="" method="post" role="form" class="contactForm">
+            <div id="sendmessage">Vaša rezervacija Smoothie-a je uspješna! Hvala Vam na ukazanom povjerenju!</div>
+            <div id="errormessage"></div>
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group label-floating is-empty">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" data-rule="minlen:4" data-msg="Upišite minimalno 4 karaktera" />
+                <div class="validation"></div>
+              </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Datum" data-rule="required" data-msg="Polje je obavezno" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group">
+                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Vaša e-mail adresa" data-rule="email" data-msg="Unesite validnu e-mail adresu" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Vrijeme" data-rule="required" data-msg="Polje je obavezno" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Broj telefona" data-rule="required" data-msg="Polje je obavezno" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-12 contact-form">
+              <div class="form-group label-floating is-empty">
+                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Molimo Vas da nam upišete poruku" placeholder="Vaša poruka"></textarea>
+                <div class="validation"></div>
+              </div>
+
+            </div>
+            <div class="col-md-12 btnpad">
+              <div class="contacts-btn-pad">
+                <button class="contacts-btn">Rezervišite!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / contact -->
+  <!-- footer -->
+  <footer class="footer text-center">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="widget">
+            <h4 class="widget-title">Smoothie</h4>
+            <address>Branilaca Sarajeva 23<br>71000 Sarajevo<br>Bosna i Hercegovina</address>
+            <div class="social-list">
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Delicious
+                -->
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
