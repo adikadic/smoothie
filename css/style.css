@@ -1,9 +1,18 @@
-/*
-    Theme Name: Delicious
-    Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
+.mb-2 { margin-bottom: 2rem; }
+.mb-4 { margin-bottom: 4rem; }
+.mb-6 { margin-bottom: 6rem; }
+.mb-8 { margin-bottom: 8rem; }
+
+.ml-1 { margin-left: 1rem; }
+
+.mr-1 { margin-right: 1rem; }
+.mr-2 { margin-right: 2rem; }
+
+.flex { display: flex; };
+.justify-center { justify-content: center };
+.items-center { align-items: center; };
+
+.block { display: block; }
 
 body {
 	font-size: 15px;
@@ -360,6 +369,23 @@ table {
     font-family: Satisfy,'Open Sans',arial;
     font-size: 1.2rem;
 }
+
+.ingredients {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    z-index: 20;
+}
+
+.menu-restaurant.clicked {
+    opacity: 0.5;
+}
+
+.menu-restaurant.clicked .menu-title,
+.menu-restaurant.clicked .menu-price,
+.menu-restaurant.clicked .menu-subtitle { 
+text-decoration: line-through; }
+
 .menu-restaurant span.clearfix {
     position: relative;
     display: block;
@@ -386,6 +412,47 @@ table {
     text-decoration: none;
     cursor: pointer;
 }
+
+#glass {
+    background: rgba( 255, 255, 255, 0.50);
+    border: 1px solid #bbb;
+    border-top: 1px solid #eee;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#water {
+    background-image: url(../img/waves.png);
+    background-position: top right;
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 70px;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#smoothie-result-price {
+    position: absolute;
+    top: -6rem;
+    right: -8rem;
+    transform: rotate(25deg);
+    opacity: 0.7;
+    font-size: 6rem;
+    z-index: 10;
+}
+
 
 .footer {
     width: 100%;

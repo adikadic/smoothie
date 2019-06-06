@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Smoothie</title>
+  <title>Smoothie Bar</title>
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -20,7 +20,7 @@
       <header id="header">
         <div class="container">
           <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about">O nama</a>
             <a href="#menu-list">Smoothie Bar</a>
             <a href="#contact">Kontakt</a>
@@ -75,174 +75,145 @@
   </section>
   <!--/about-->
 
-  <!-- event 
-  <section id="event">
-    <div class="bg-color" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center" style="padding:60px;">
-            <h1 class="header-h">Up Coming events</h1>
-            <p class="header-p">Decorations 100% complete here</p>
-          </div>
-          <div class="col-md-12" style="padding-bottom:60px;">
-            <div class="item active left">
-              <div class="col-md-6 col-sm-6 left-images">
-                <img src="img/res02.jpg" class="img-responsive">
-              </div>
-              <div class="col-md-6 col-sm-6 details-text">
-                <div class="content-holder">
-                  <h2>Joyful party</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
-                  <address>
-                              <strong>Place: </strong>
-                              1612 Collins Str, Victoria 8007
-                              <br>
-                              <strong>Time: </strong>
-                              07:30pm
-                            </address>
-                  <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ event -->
-
-  <!-- menu OVDJE UBACITI SEKCIJU SA FORMIRANJE SMOOTHIES-A, TREBA SKONTATI DIZAJN-->
+  <!-- menu -->
   <section id="menu-list" class="section-padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center marb-35">
+        <div class="col-md-6 text-center marb-35">
           <h1 class="header-h">Smoothie Bar</h1>
-          <p class="header-p">Odabirom svježih sastojaka kreirajte svoj omiljeni Smoothie i probudite svoja čula!</p>
-        </div>
-        <div class="col-md-12  text-center" id="menu-flters">
-          <ul>
-            <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
-            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
-            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
-            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
-          </ul>
+          <p class="header-p mb-8">Odabirom svježih sastojaka kreirajte svoj omiljeni Smoothie i probudite svoja čula!</p>
+
+          <div id="glass" class="mb-4">
+            <div id="smoothie-result-price" class="block mb-8 header-h"><b class="price">0</b><span class="ml-1">KM </span></div>
+            <div id="water"></div>
+          </div>
+
         </div>
 
-        <div id="menu-wrapper">
-
-          <div class="breakfast menu-restaurant">
-            <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-              <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
-            </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+        <div class="col-md-6">
+          <div class="text-center mb-4" id="menu-flters">
+            <ul>
+              <li><a class="filter active" data-filter=".menu-restaurant">Sve</a></li>
+              <li><a class="filter" data-filter=".breakfast">Doručak</a></li>
+              <li><a class="filter" data-filter=".lunch">Ručak</a></li>
+              <li><a class="filter" data-filter=".dinner">Večera</a></li>
+            </ul>
           </div>
 
+           <div id="menu-wrapper">
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Jagode</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.99"> <span>0.99</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-          </div>
-
-          <div class="breakfast menu-restaurant">
-            <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-              <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
-            </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Voće puno neophodnih vitamina i minerala</span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Maline</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.80"> <span>0.80</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Bobičasto voće uz odličan izvor vlakana</span>
+          </div>
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="javascript:void(0);">Jabuka</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price" data-price="0.50"> <span>0.50</span>
+            </span>
+            <span class="menu-subtitle">Bogata antioksidansima; Za smanjenje holesterola</span>
+          </div>
+
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="javascript:void(0);">Bobice nara</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price" data-price="0.70"> <span>0.70</span>
+            </span>
+            <span class="menu-subtitle">Odličan izvor vitamina C i antioksidansa</span>
           </div>
 
           <div class="lunch menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Ukusni Kiwi</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.50"> <span>0.50</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Sadrži više vitamina C od naranče</span>
           </div>
 
           <div class="lunch menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Avokado</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="1.00"> <span>1.00</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Bogat biotinom; Sadrži vitamine A i E</span>
           </div>
 
           <div class="lunch menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Egzotični mango</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.90"> <span>0.90</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Mango je pun vitamina B6 i aminokiselina</span>
           </div>
 
           <div class="lunch menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Banana</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.50"> <span>0.50</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Veoma bogato voće kalijumom i vlaknima</span>
           </div>
 
           <div class="lunch menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Ananas</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.99"> <span>0.99</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Voće bogato vitaminom C, A i vitaminima B</span>
           </div>
 
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Chia sjemenke</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.50"> <span>0.50</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Bogate omega-3 i omega-6 masnim kiselinama</span>
           </div>
 
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Bademi</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.99"> <span>0.99</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Bogat izvor bakra, vitamina B2 i fosfora</span>
           </div>
 
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="javascript:void(0);">Lješnjak</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price" data-price="0.80"> <span>0.80</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Bogati su vitaminima E, B i folnom kiselinom</span>
           </div>
         </div>
-
+      </div>
       </div>
     </div>
   </section>
-  <!-- OVDJE UBACITI MENI SA SASTOJCIMA DA SE MOŽE KREIRATI KONAČNA CIJENA SMOOTHIE-A -->
+  <!-- MENU END -->
   <!-- contact -->
   <section id="contact" class="section-padding">
     <div class="container">
